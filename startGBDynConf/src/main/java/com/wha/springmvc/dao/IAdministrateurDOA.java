@@ -7,7 +7,7 @@ import com.wha.springmvc.model.Administrateur;
 public interface IAdministrateurDOA {
 
 	
-	//Administrateur findAdministrateurById(int Id);
+	// Administrateur findAdministrateurById(int Id);
 	//Administrateur findAdministrateurByName(String name);
 	Collection<Administrateur> findAllAdministrateur();
 	

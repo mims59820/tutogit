@@ -28,7 +28,7 @@ public class AdministrateurDaoImpl implements IAdministrateurDOA {
 
 	//@Override
 	//public Administrateur findAdministrateurByName(String name) {
-	//	Query req=em.createQuery("Select a from administrateur a where administrateur.nom="+name);
+	//	 Query req=em.createQuery("Select a from administrateur a where administrateur.nom="+name);
 	//	return (Administrateur) req.getSingleResult();
 	//}
 
