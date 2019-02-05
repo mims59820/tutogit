@@ -20,11 +20,7 @@ public class Compte implements Serializable{
 	private int Solde;
 	private int RIB;
 	
-	//fedf
-	//test du commit
-	//deuxieme commit test
-	
-	//trht
+
 	
 	public int getIdentifiant() {
 		return Identifiant;
