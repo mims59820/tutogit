@@ -9,7 +9,9 @@ public class CompteDecouvert extends Compte{
 	private int decouvertAuto;
 	private int tauxAgios;
 	
-	
+	public CompteDecouvert() {
+		
+	}
 	
 	
 	public int getDecouvertAuto() {

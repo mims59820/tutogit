@@ -10,6 +10,10 @@ public class Compteremun extends Compte{
 	private int tauxRemun;
 	private int seuilMini;
 	
+	public Compteremun() {
+		
+	}
+	
 	
 	public int getTauxRemun() {
 		return tauxRemun;

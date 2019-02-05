@@ -19,6 +19,7 @@ public class Compte implements Serializable{
 	private String typeCompte;
 	private Date dateCreation;
 	private int Solde;
+
 	public Collection<OperationBancaire> getOperations() {
 		return operations;
 	}
