@@ -1,8 +1,11 @@
 package com.wha.springmvc.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 //jbj
 @Entity
 public class DemandeCompte {
@@ -13,6 +16,15 @@ public class DemandeCompte {
 	private String adress;
 	private String mail;
 	private int tel;
+	@ManyToOne(cascade= {CascadeType.ALL},fetch=FetchType.EAGER)
+    private Administrateur administrateur;
+	public Administrateur getAdministrateur() {
+		return administrateur;
+	}
+
+	public void setAdministrateur(Administrateur administrateur) {
+		this.administrateur = administrateur;
+	}
 
 	public DemandeCompte() {
 

@@ -1,6 +1,7 @@
 package com.wha.springmvc.model;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.*;
@@ -18,14 +19,26 @@ public class Compte implements Serializable{
 	private String typeCompte;
 	private Date dateCreation;
 	private int Solde;
+	public Collection<OperationBancaire> getOperations() {
+		return operations;
+	}
+	public void setOperations(Collection<OperationBancaire> operations) {
+		this.operations = operations;
+	}
 	private int RIB;
+	@OneToMany(mappedBy="compte")
+	private Collection<OperationBancaire> operations;
 	
-	//fedf
-	//test du commit
-	//deuxieme commit test
-
-	//trht
+	@ManyToOne(cascade= {CascadeType.ALL},fetch=FetchType.EAGER)
+	private Client client;
 	
+	
+	public Client getClient() {
+		return client;
+	}
+	public void setClient(Client client) {
+		this.client = client;
+	}
 	public int getIdentifiant() {
 		return Identifiant;
 	}

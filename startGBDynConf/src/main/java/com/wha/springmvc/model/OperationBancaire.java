@@ -15,6 +15,8 @@ public class OperationBancaire {
 	protected int numero;
 	protected double montant;
 	protected Date DateVirement;
+	@ManyToOne(cascade= {CascadeType.ALL},fetch=FetchType.EAGER)
+	private Compte compte;
 	public OperationBancaire() {
 		super();
 	}
@@ -26,6 +28,12 @@ public class OperationBancaire {
 	}
 	public int getNumero() {
 		return numero;
+	}
+	public Compte getCompte() {
+		return compte;
+	}
+	public void setCompte(Compte compte) {
+		this.compte = compte;
 	}
 	public void setNumero(int numero) {
 		this.numero = numero;
