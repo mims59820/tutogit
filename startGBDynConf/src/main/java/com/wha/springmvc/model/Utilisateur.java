@@ -6,7 +6,7 @@ import org.hibernate.annotations.DiscriminatorOptions;
 
 import javax.persistence.*;
 
-//cration entity bbbbghfdvc
+//cration entity bbbbghfdvchh
 @Entity(name="Utilisateur")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="TypeUtilisateur", discriminatorType=DiscriminatorType.STRING)
