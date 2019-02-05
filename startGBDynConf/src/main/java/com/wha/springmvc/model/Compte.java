@@ -26,8 +26,13 @@ public class Compte implements Serializable{
 
 	//trht
 	
+	
+	
 	public int getIdentifiant() {
 		return Identifiant;
+	}
+	public Compte() {
+	
 	}
 	public void setIdentifiant(int identifiant) {
 		Identifiant = identifiant;
