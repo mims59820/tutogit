@@ -5,8 +5,8 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@DiscriminatorValue("utilisateur")
-public class Conseiller extends User implements Serializable {
+@DiscriminatorValue("Conseiller")
+public class Conseiller extends Utilisateur implements Serializable {
 
 	private int matricule;
 	private Date DateDebutContrat;

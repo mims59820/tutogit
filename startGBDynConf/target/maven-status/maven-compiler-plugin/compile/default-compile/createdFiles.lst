@@ -1,0 +1,14 @@
+com\wha\springmvc\configuration\HelloWorldInitializer.class
+com\wha\springmvc\model\User.class
+com\wha\springmvc\model\Conseiller.class
+com\wha\springmvc\configuration\CORSFilter.class
+com\wha\springmvc\controller\HelloWorldRestController.class
+com\wha\springmvc\model\Credit.class
+com\wha\springmvc\model\OperationBancaire.class
+com\wha\springmvc\configuration\HelloWorldConfiguration.class
+com\wha\springmvc\configuration\JpaConfiguration.class
+com\wha\springmvc\controller\IndexController.class
+com\wha\springmvc\service\UserServiceImpl.class
+com\wha\springmvc\model\Debit.class
+com\wha\springmvc\service\UserService.class
+com\wha\springmvc\model\Utilisateur.class
