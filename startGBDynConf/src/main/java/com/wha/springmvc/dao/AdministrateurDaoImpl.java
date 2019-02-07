@@ -6,6 +6,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,8 +18,8 @@ import com.wha.springmvc.model.Conseiller;
 public class AdministrateurDaoImpl implements IAdministrateurDOA {
 	
 
-	@PersistenceContext
-	private EntityManager em;
+	@Autowired
+	private SessionFactory em;
 			
 
 	//@Override
